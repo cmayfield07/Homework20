@@ -40,18 +40,26 @@
 .myRole{
     padding-bottom: 20px;
 }
-.theProcess{
-    padding-bottom: 40px;
-}
+
 .btn-primary{
     background-color: darkolivegreen;
-    border-color:darkolivegreen
+    border-color:darkolivegreen;
     
 }
-.btn-primary:hover{
-    background-color: #C3889E;
-    border-color: #C3889E;
+.btn-primary:active{
+    background-color: darkolivegreen !important;
+    border-color:darkolivegreen !important;
 }
+.btn-primary:hover{
+    background-color: #a7bea9;
+    border-color: #a7bea9;
+}
+.btn-primary:focus{
+    background-color: rgb(170, 151, 127);
+    border-color:rgb(170, 151, 127);
+    box-shadow: 0 0 0 2px #a7bea9 !important;
+}
+
 .media{
     padding-top: 60px;
     padding-bottom: 40px;
@@ -60,6 +68,7 @@
     max-width: 1000px;
     max-height: 500px;
     width: 100%;
+    padding-bottom: 60px;
 }
 /*@media only screen and (max-width: 480px) {
     html,body {
@@ -100,7 +109,22 @@ height: 700px;
   color:#fff;
   padding:0 10px;
 }
-
+.brainStorming img{
+    padding-top: 40px;
+    transition:transform 0.25s ease;
+}
+.brainStorming img:hover{
+    position: relative;
+    -webkit-transform:scale(1.3);
+    transform: scale(1.3);
+    z-index:100;
+}
+.myIterations{
+    padding-top: 40px;
+}
+#more{
+    display:none;
+}
 
 .slideEventImg i:first-of-type{top:50%;left: 1%}
 .slideEventImg i:last-of-type{top:50%;right: 1%}

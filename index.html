@@ -62,14 +62,31 @@
         <img src="images/designprocess.jpg">
       </div>
       
-    <div class = "row">
+    <div class = "container row">
       <div class = "col-lg-3 col-md-3 col-sm-12 ">
         <div class="card">
           <img src="images/HodgePodge - Protopersona.png" class="card-img-top" alt="Protopersona">
           <div class="card-body">
             <h5 class="card-title">Protopersona </h5>
-            <p class="card-text">My research team and I created a preliminary persona based on our shared understanding of who would be most likely to use an app like ours. </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <p class="card-text">My research team and I created a preliminary persona based on our shared understanding of who would be most likely to use an app like ours.<span id="dots">..</span> <span id = "more">This persona was not based on concrete research but served as a guide for the formation of the research plan. </span></p>
+            <button class="btn btn-primary" onclick="myFunction()" id="myBtn1">Read More</button>
+            <script>
+               function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn1");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+    }
+            </script>
           </div>
         </div>
       </div>
@@ -78,9 +95,25 @@
           <img src="images/Group Project 1- Interview Insights.jpeg" class="card-img-top" alt="Interview Insights">
           <div class="card-body">
             <h5 class="card-title">User Interviews </h5>
-            <p class="card-text">I conducted two initial user interviews as well as an online survey to gain insight into what a user may want or need in a recipe app as well as what their goals are when preparing a meal for themselves or others. 
-            </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <p class="card-text">I conducted two initial user interviews as well as an online survey to gain insight into what a user may want or need in a recipe app as well as what their goals are when preparing a meal for themselves or others.<span id="dots2">..</span> <span id = "more2">This survey consisted of questions regarding the user's cooking skills, grocery shopping habits, and cooking strategy. Click <a href = "https://docs.google.com/forms/d/e/1FAIpQLSeUIq-abwPncxEBFjORCaSQ7G0AiblALqmkDH6v46tGTT467Q/viewform?usp=sf_link">here</a> to view the survey. </span></p>
+            <button class="btn btn-primary" onclick="myFunction2()" id="myBtn2">Read More</button> 
+            <script>
+              function myFunction2() {
+       var dots2 = document.getElementById("dots2");
+       var moreText2 = document.getElementById("more2");
+       var btnText2 = document.getElementById("myBtn2");
+     
+       if (dots2.style.display === "none") {
+         dots2.style.display = "inline";
+         btnText2.innerHTML = "Read more";
+         moreText2.style.display = "none";
+       } else {
+         dots2.style.display = "none";
+         btnText2.innerHTML = "Read less";
+         moreText2.style.display = "inline";
+       }
+   }
+           </script>
           </div>
         </div>
       </div>
@@ -89,8 +122,25 @@
           <img src="images/affinitydiagram.jpeg" class = "card-img-top" alt="Affinity Diagram">
           <div class="card-body">
             <h5 class="card-title">Affinity Diagram</h5>
-            <p class="card-text">I compiled a list of insights with the other two members of my team. Those insights were organized into the categories shown above. </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <p class="card-text">I compiled a list of insights with the other two members of my team. Those insights were organized into the categories shown above.<span id = "dots3">..</span><span id = "more3">These categories allowed us to visualize the common thoughts and feelings of our surveyed users.</span></p>
+            <button class="btn btn-primary" onClick = "myFunction3()" id="myBtn3">Read More</button>
+            <script>
+              function myFunction3() {
+       var dots3 = document.getElementById("dots3");
+       var moreText3 = document.getElementById("more3");
+       var btnText3 = document.getElementById("myBtn3");
+     
+       if (dots3.style.display === "none") {
+         dots3.style.display = "inline";
+         btnText3.innerHTML = "Read more";
+         moreText3.style.display = "none";
+       } else {
+         dots3.style.display = "none";
+         btnText3.innerHTML = "Read less";
+         moreText3.style.display = "inline";
+       }
+   }
+           </script>
           </div>
         </div>
       </div>
@@ -99,22 +149,52 @@
           <img src="images/empathymap.jpeg" class ="card-img-top" alt="Empathy Map">
           <div class="card-body">
             <h5 class="card-title">Empathy Map </h5>
-            <p class="card-text">Based on the user insights, we were able to create an empathy map indicating our user’s thoughts, comments, feelings, and actions. </p>
-            <a href="#" class="btn btn-primary">Read More</a>
+            <p class="card-text">Based on the user insights, we were able to create an empathy map indicating our user’s thoughts, comments, feelings, and actions.<span id = "dots4">..</span><span id = "more4">This stage helped us decide on the behaviors and personalities of our ideal user demonstrated by our persona.</span> </p>
+            <button class="btn btn-primary" onclick = "myFunction4()" id = "myBtn4">Read More</button>
+            <script>
+              function myFunction4() {
+       var dots4 = document.getElementById("dots4");
+       var moreText4 = document.getElementById("more4");
+       var btnText4 = document.getElementById("myBtn4");
+     
+       if (dots4.style.display === "none") {
+         dots4.style.display = "inline";
+         btnText4.innerHTML = "Read more";
+         moreText4.style.display = "none";
+       } else {
+         dots4.style.display = "none";
+         btnText4.innerHTML = "Read less";
+         moreText4.style.display = "inline";
+       }
+   }
+           </script>
           </div>
         </div>
       </div>
     </div>
-    <div class="media">
-      <img src="images/userpersona.png" width = "300" height = "190" class="mr-3" alt="User Persona">
+    <div class="container media">
+      <img src="images/userpersona.png" width = "280"  class="mr-3" alt="User Persona">
       <div class="media-body">
-        <h5 class="mt-0">User Persona</h5>
+        <h3 class="mt-0">User Persona</h3>
         After conducting extensive user research the team was able to refine our original persona. The final persona more accurately represented our ideal user. The biggest pain points of the user were food being wasted, not having enough time to cook, and not having the knowledge or skill to cook well. 
       </div>
     </div>
-    <div class = "container myIterations">
+    <div class = "container brainStorming">
+      <h3>Brainstorming and Feature Prioritization</h3>
+      <p>During this phase I discovered which features were most important to the user based on the interview and survey data extrapolation. We really wanted to be able to offer users an app that could do anything and everything they even hinted at needing. We quickly found ourselves going down the rabbit hole of scope creep and feature overload. After gaining instructor feedback, we realized we needed to really hone in our ideas and narrow it down to just a few key features.  We further prioritized the features based on what could most feasibly implemented in the timeframe of the project. </p>
+      <div class = "row">
+        <div class="col-lg-6 col-md-6 col-sm-10">
+           <img src ="images/I like .jpeg" alt = "I like I wish What If" width ="500" height = "300" alt = "Dot Voting">
+        </div>  
+    <div class = "col-lg-6 col-md-6 col-sm-10">
+      <img src = "images/I like I wish.jpeg" width ="500" height = "300" alt = "recipe app">
+    </div>
+    <img src = "images/featurePrioritization.jpeg" width = "1100">
+    </div>
+    </div>
+<div class = "container myIterations">
   <h3>Iterations</h3>
-  <div class=" slideEventImg">
+  <div class="slideEventImg">
 
     <img class="activeImg" src="images/Paper Wireframes welcome.png" alt="">
     
@@ -126,7 +206,7 @@
 
       <div class="indicators">
         <i class="fa fa-angle-left fa-3x text"></i>
-        <i class="fa fa-angle-right fa-3x"></i>
+        <i class="fa fa-angle-right fa-3x text"></i>
       </div>
   </div><!-- slideEventImg -->
   <p>I conducted 3 user tests on the low fidelity prototype. The first 2 tests revealed minor issues with the interface such as some of the touch-points being too small. Another issue that arose was that users had some difficulty navigating to the "Favorites" smoothly without coaching. 
