@@ -8,6 +8,17 @@
     <title>Hodge Podge Mobile App Case Study</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href= "index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light customNav">
@@ -220,6 +231,7 @@
 <h3>Mid-Fidelity Prototyping</h3> 
   <p>With the team I created digital wireframes based on the sketches above using Figma. We started by mocking up the frames in simple grayscale just to get a general feel for how the app would look. 
   I created a logo for the app using Adobe Illustrate. This logo went through several iterations (see iterations below), before we decided what would work best with our app based on readability standards and overall design appearance. </p>  
+  <button id="hide">Hide</button>
+<button id="show">Show</button>
 </div>
-
 </body>
